@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    background: #70e1f5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
+    background: linear-gradient(to right, #ffd194, #70e1f5); 
+
+}
+.container{
+    max-width: 500px;
+    margin-top: 50px;
+
+}
+#inputTitle{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: darkolivegreen;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px red;
+}
+#inputData{
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 900;
+    font-size: large;
+    padding-left: 5px;
+}
+#inputBtn{
+    padding: 0;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight:600;
+}
+#inputBtn:hover{
+    font-size: medium;
+    font-weight: 900;
+    color: white;
+    background-color: black;
+}
+.inputList{
+    margin-top: 10px;
+    list-style: none;
+   
+    
+    
+}
+.inputList li{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 330px;
+    height: 40px;
+    background-color: #78a5e7;
+    border-radius:5px;
+    font-size: xx-large;
+    margin-bottom: 10px;
+    animation: 0.3s ease-in-out;
+    /* animation-name: slideIn; */
+    
+    
+}
+
+@keyframes slideIn{
+    from{
+        opacity: 0;
+        transform: rotateX(60deg) translateY(-10px);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0deg) translateY(0px);
+
+    }
+}
+
+.slideOut{
+    transform: rotateX(60deg) translateY(-10px);
+    opacity: 0;
+    transition: 1s;
+}
